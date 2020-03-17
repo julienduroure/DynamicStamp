@@ -27,7 +27,7 @@ class POSE_PT_juds_dynstamp(bpy.types.Panel):
     bl_label = 'Dynamic Note Stamp'
     bl_space_type = 'PROPERTIES'
     bl_region_type = 'WINDOW'
-    bl_context = "render"
+    bl_context = "output"
 
     @classmethod
     def poll(self, context):
@@ -37,7 +37,7 @@ class POSE_PT_juds_dynstamp(bpy.types.Panel):
         self.layout.prop(context.scene, "juds_use_dynstamp", text="")
         if context.scene.juds_use_dynstamp:
             if len(context.scene.juds_data) == 0:
-                self.layout.label("", icon='ERROR')
+                self.layout.label(text="", icon='ERROR')
 
     def draw(self, context):
         layout = self.layout

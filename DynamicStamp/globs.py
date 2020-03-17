@@ -24,8 +24,8 @@
 import bpy
 
 class DynamicStampFrame(bpy.types.PropertyGroup):
-    name  = bpy.props.StringProperty(name="Frame")
-    note  = bpy.props.StringProperty(name="Note")
+    name  : bpy.props.StringProperty(name="Frame")
+    note  : bpy.props.StringProperty(name="Note")
 
 def register():
     bpy.utils.register_class(DynamicStampFrame)

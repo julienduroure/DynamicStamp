@@ -22,9 +22,9 @@
 ##########################################################################################
 bl_info = {
     "name": "DynamicStamp",
-    "version": (0, 1, 0),
+    "version": (0, 2, 0),
     "author": "Julien Duroure",
-    "blender": (2, 79, 0),
+    "blender": (2, 82, 0),
     "description": "Dynamic Stamp",
     "location": "Render Properties",
     "wiki_url": "https://github.com/julienduroure/DynamicStamp/",

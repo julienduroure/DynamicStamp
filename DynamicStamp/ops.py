@@ -72,7 +72,9 @@ class POSE_OT_juds_update_text(bpy.types.Operator):
 def register():
     bpy.utils.register_class(POSE_OT_juds_update_text)
     bpy.app.handlers.frame_change_post.append(juds_frame_change_handler)
+    bpy.app.handlers.render_pre.append(juds_frame_change_handler)
 
 def unregister():
     bpy.utils.unregister_class(POSE_OT_juds_update_text)
     bpy.app.handlers.frame_change_post.remove(juds_frame_change_handler)
+    bpy.app.handlers.render_pre.remove(juds_frame_change_handler)
